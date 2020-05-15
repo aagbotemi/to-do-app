@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a93b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: #efefef;
+    width: 380px;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    background: url("https://cdn.pixabay.com/photo/2016/08/09/21/54/yellowstone-national-park-1581879_960_720.jpg");
+    margin: 4px;
+    height: 13rem;
+    min-height: 100%;
+    border-radius: 3px 3px 0 0;
+}
+
+.clear {
+    display: grid;
+    justify-content: end;    
+}
+
+.fa-sync-alt {
+    color: aliceblue;
+    padding: 10px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.fa-sync-alt:hover {
+    color: #09f;
+    transform: rotate(45deg);
+}
+
+#date {
+    color: #fff;
+    position: fixed;
+    top: 34%;
+    margin-left: 8px;
+    font-size: 22px;
+}
+
+.content {
+    width: 380px;
+    max-width: 100%;
+    height: 300px;
+}
+
+.item {
+    width: 370px;
+    height: 24px;
+    display: flex;
+    margin: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    align-items: baseline;
+}
+
+.item .fa-check-circle {
+    color: #118a1f;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.item .fa-circle-thin {
+    font-size: 20px;
+}
+
+.item p {
+    position: relative;
+    margin-left: 7px;
+    font-size: 18px;
+    width: 320px;
+    max-width: 100%;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.item .fa-trash-alt {
+    font-size: 20px;
+}
+
+.item .fa-trash-alt:hover {
+    color: #d3140e;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.add-to-do {
+    border-top: 1px solid rgba(0,0,0,0.3);
+    margin: 5px;
+    display: flex;
+    
+}
+
+.fa-plus-circle {
+    color: #223af1;
+    font-size: 30px;
+}
+
+#input {
+    width: 355px;
+    height: 30px;
+    border: none;
+    margin-left: 5px;
+    font-size: 20px;
+    background: transparent;
+}
