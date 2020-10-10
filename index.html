@@ -3,37 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6629e20d42.js" crossorigin="anonymous"></script>
-    <title>TO-DO App</title>
+    <title> Todo List </title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="clear">
-                <i class="fas fa-sync-alt"></i>
-            </div>
-            <div id="date"></div>
-        </div>
-        <div class="content">
-            <ul id="list">
-                <!--
-                <li class="item">
-                    <i class="fa fa-check-circle" job="complete" id="0"></i>
-                    <p class="text">Drink Coffee</p>
-                    <i class="fa fa-trash-alt" job="complete" id="0"></i>
-                </li> -->
-            </ul>
-        </div>
-            <div class="add-to-do">
-                <i class="fas fa-plus-circle"></i>
-                <input type="text" id="input" placeholder="Add to-do">
-            </div>
-        </div>
+    <div class="wrapper">
+        <h1>What do you want to do?</h1>
+
+        <form class="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a Todo...">
+            <button type="submit" id="addButton">add todo</button>
+            <!-- <input type="text" id="search" placeholder="Search your list" /> -->
+        </form>
+
+        <h4 id="error"></h4>
+
+        <ul id="todo-items">
+            <!-- <li id="item" data-key="1594003133171">
+                <input id="checkbox" type="checkbox">
+                Go to Gym
+                <button class="edit-button"><i class="fas fa-edit"></i></button>
+                <button class="delete-button"><i class="fas fa-trash-alt"></i></button>
+            </li> -->
+        </ul>
     </div>
 
-
-    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/6629e20d42.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
