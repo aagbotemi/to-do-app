@@ -48,7 +48,7 @@ const renderTodos = (todos) => {
         li.innerHTML = `
             <input type="checkbox" id="checkbox" ${checked}>
             ${item.name}
-            <button class="delete-button"><i class="fas fa-trash-alt"></i></button>
+            <button class="delete-button">X</button>
         `;
         
         todoItemsList.append(li);

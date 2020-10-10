@@ -152,7 +152,7 @@ ul {
     border-radius: 50%;
     font-weight: 550;
 }
-.delete-button:hover, .fas:hover {
+.delete-button:hover {
     cursor: pointer;
     background-color:#e24a4d;
     color: #e70b0f;
